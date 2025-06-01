@@ -21,9 +21,9 @@ STATIC_DIR=os.path.join(BASE_DIR,'static')
 SECRET_KEY = 'django-insecure-*sx&s%t4l1k8mqh3@0^plor5d^_sm&cs=d9vf*w7+msmu@1daj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1','.now.sh' ]
 
 
 # Application definition
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
     'widget_tweaks',
     'bootstrap_modal_forms',
-    'bootstrap5',
+    'django_bootstrap5',
     'django_forms_bootstrap',
     'crispy_forms',
     'crispy_bootstrap5',
@@ -94,11 +94,11 @@ DATABASES = {
          #'ENGINE': 'django.db.backends.sqlite3',
          #'NAME': BASE_DIR / 'db.sqlite3',
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "ESDL",
+        "NAME": "railway",
         "USER": "postgres",
-        "PASSWORD": "Ken@4427",
-        "HOST": "localhost",
-        "PORT": "5432",}
+        "PASSWORD": "UJTNHSmqYEiZqKzmcKzQmPuYvHUAmogH",
+        "HOST": "yamabiko.proxy.rlwy.net",
+        "PORT": "46058",}
 }
 
 
@@ -154,7 +154,7 @@ STATIC_URL = '/static/'
 AUTH_USER_MODEL = 'elearn.User'
 
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
