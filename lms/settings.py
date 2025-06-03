@@ -25,7 +25,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['cubecademy.onrender.com', '0.0.0.0','.now.sh' ]
 
-CSRF_TRUSTED_ORIGINS = ['cubecademy.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://cubecademy.onrender.com']
 
 
 # Application definition
